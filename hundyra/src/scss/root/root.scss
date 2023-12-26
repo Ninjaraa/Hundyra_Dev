@@ -1,0 +1,17 @@
+// Site
+html,
+body {
+    font-size: $font-size-16;
+    font-family: $font-barlow;
+    font-weight: $font-weight-regular;
+    color: $color-theme-dark;
+    line-height: 1.7;
+}
+
+.bg-theme {
+    background-color: $color-theme;
+}
+
+header {
+    width: 100%;
+}

@@ -1,0 +1,68 @@
+.content-section {
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  
+      .info-box {
+        max-width: 782px;
+        line-height: 1.5;
+
+        .text-content {
+          margin: 2rem 0 0 2rem 0;
+          text-align: center;
+        }
+  
+        h1 {
+          margin: 2rem 0 2rem 0;
+          text-align: center; 
+          font-size: $font-size-24;
+          font-weight: $font-weight-medium;
+          color: $color-theme;
+
+          @include tablet {
+            font-size: $font-size-22;
+          }      
+        }
+  
+        h2 {
+          margin: 2rem 0 1rem 0;
+          text-align: center; 
+          font-size: $font-size-22;
+          color: $color-theme;
+          font-weight: $font-weight-light;
+
+          @include tablet {
+            font-size: $font-size-20;
+          }
+        }
+  
+        p {
+          text-align: center; 
+          font-size: $font-size-17;
+          line-height: 1.5;
+          font-family: $font-barlow;
+          font-weight: $font-weight-thinlight;
+          color: $color-theme-dark;
+
+          @include tablet {
+            font-size: $font-size-17;
+          }  
+        }
+  
+        .img-content {
+          margin: 1rem auto;
+        }
+  
+        .contact-content {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+    }
+  }
