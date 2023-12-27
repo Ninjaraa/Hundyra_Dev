@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HemComponent } from './hem/hem.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenyComponent } from './meny/meny.component';
 
