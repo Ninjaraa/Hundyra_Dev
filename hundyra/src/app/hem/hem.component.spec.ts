@@ -1,23 +1,13 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HemComponent } from "./hem.component"
 
-import { HemComponent } from './hem.component';
+describe('AppComponent', () => {
+  let fixture: HemComponent;
 
-describe('HemComponent', () => {
-  let component: HemComponent;
-  let fixture: ComponentFixture<HemComponent>;
+  beforeEach(() => {
+    fixture = new HemComponent();
+  })
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [HemComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(HemComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  it('Needs a title hundyra', () => {
+    expect(fixture.title).toEqual('hundyra');
+  })
+})

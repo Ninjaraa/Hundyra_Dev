@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './hem.component.html'
 })
 export class HemComponent {
-
+    title = 'hundyra';
 }

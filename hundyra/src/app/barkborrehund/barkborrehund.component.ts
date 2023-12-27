@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MenyComponent } from '../meny/meny.component';
+import { MenyComponent } from '../reusables/meny/meny.component';
 
 @Component({
   selector: 'app-barkborrehund',
@@ -9,5 +9,5 @@ import { MenyComponent } from '../meny/meny.component';
   styleUrl: './barkborrehund.component.scss'
 })
 export class BarkborrehundComponent {
-
+  title = 'barkborrehund';
 }
