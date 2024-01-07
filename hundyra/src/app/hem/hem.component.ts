@@ -16,7 +16,7 @@ export class HemComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.titleService.setTitle('Hem');
-    this.metaService.updateTag({ name: 'description', content: 'Your Page Description' });
+    this.titleService.setTitle('Barkborresök med hund | Hundyra');
+    this.metaService.updateTag({ name: 'description', content: 'Jag och min hund hjälper dig att söka av din skogsfastighet tidseffektivt efter barkborreangrepp. Vi är verksamma i hela Sverige. Varmt välkommen att kontakta mig!' });
   }
 }

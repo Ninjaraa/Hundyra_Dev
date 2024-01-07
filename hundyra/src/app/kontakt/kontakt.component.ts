@@ -20,7 +20,7 @@ export class KontaktComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.titleService.setTitle('Kontakt');
-    this.metaService.updateTag({ name: 'description', content: 'Your Page Description' });
+    this.titleService.setTitle('Välkommen att kontakta mig | Hundyra');
+    this.metaService.updateTag({ name: 'description', content: 'Du är alltid välkommen att kontakta mig, oavsett vad du har för frågor. Jag finns tillgänglig via mail, Facebook och via mitt konto på Instagram.' });
   }
 }

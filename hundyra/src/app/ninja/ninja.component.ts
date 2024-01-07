@@ -16,7 +16,7 @@ export class NinjaComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.titleService.setTitle('Om Ninja');
-    this.metaService.updateTag({ name: 'description', content: 'Your Page Description' });
+    this.titleService.setTitle('Hundinstruktör/beteendeutredare i Mark | Hundyra');
+    this.metaService.updateTag({ name: 'description', content: 'Jag jobbar som hundinstruktör/beteendeutredare i Marks kommun. Jag hjälper dig med din hundträning, varmt välkommen!' });
   }
 }

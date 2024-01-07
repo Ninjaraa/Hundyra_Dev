@@ -16,7 +16,7 @@ export class BarkborrehundComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.titleService.setTitle('Barkborrehund');
-    this.metaService.updateTag({ name: 'description', content: 'Your Page Description' });
+    this.titleService.setTitle('Barkborrehund | Hundyra');
+    this.metaService.updateTag({ name: 'description', content: 'En “barkborrehund” är en hund som är tränad att söka och lokalisera angrepp från granbarkborren. Läs mer om hur vi jobbar och nyttan med att söka med hund.' });
   }
 }
