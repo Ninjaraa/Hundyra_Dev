@@ -7,7 +7,7 @@ import { IconService } from '../reusables/shared.service';
   selector: 'app-kontakt',
   standalone: true,
   imports: [],
-  templateUrl: './kontakt.component.html'
+  templateUrl: './kontakt.component.html',
 })
 
 export class KontaktComponent implements OnInit {

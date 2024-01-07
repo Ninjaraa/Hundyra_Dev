@@ -1,9 +1,12 @@
-// Default styles for all screen sizes
 .main-menu {
     width: 100%;
     overflow: hidden;
     background-color: $color-gray-3;
     position: relative;
+
+    @include tablet {
+      width: $width;
+    } 
   
     .container {
       width: 100%;
@@ -14,9 +17,7 @@
       flex-direction: column;
       height: auto;
   
-      .logo {
-        // padding: 10px 0;
-  
+      .logo { 
         img {
           width: 175px;
           height: 175px;
@@ -44,7 +45,6 @@
           align-items: center;
         }
   
-        // Tablet-specific styles
         @include tablet {
           display: none;
   
@@ -89,7 +89,6 @@
             color: $color-theme;
           }
   
-          // Tablet-specific styles
           @include tablet {
             height: 30px;
             display: none;
@@ -100,7 +99,6 @@
       .icon, .fa-bars {
         display: none;
   
-        // Tablet-specific styles
         @include mobile {
           display: block;
           margin-top: 10px;
