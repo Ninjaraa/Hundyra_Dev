@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-barkborrehund',
+  selector: 'app-ninja',
   standalone: true,
   imports: [],
-  templateUrl: './barkborrehund.component.html'
+  templateUrl: './ninja.component.html',
 })
 
-export class BarkborrehundComponent implements OnInit {
+export class NinjaComponent implements OnInit {
 
   constructor(
     private titleService: Title,
@@ -16,7 +16,7 @@ export class BarkborrehundComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.titleService.setTitle('Barkborrehund');
+    this.titleService.setTitle('Om Ninja');
     this.metaService.updateTag({ name: 'description', content: 'Your Page Description' });
   }
 }

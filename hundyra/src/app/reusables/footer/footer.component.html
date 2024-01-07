@@ -1,8 +1,8 @@
 <footer>
     <div class="copyright">©2024 Hundyra.se | All right reserved.</div>
     <div class="menu-icons">
-      <a class="menu-icon" routerLink="mailto:info@hundyra.se"><i class="fa-regular fa-envelope"></i></a>
-      <a class="menu-icon" routerLink="https://www.instagram.com/hundyra/"><i class="fa-brands fa-instagram"></i></a>
-      <a class="menu-icon" routerLink="https://www.facebook.com/Hundyra/"><i class="fa-brands fa-square-facebook"></i></a>
+      <a class="menu-icon" href="mailto:{{ emailService.emailAddress }}"><i class="{{ iconService.envelopeIconClass }}"></i></a>
+      <a class="menu-icon" href="https://www.instagram.com/hundyra" target="_blank"><i class="{{ iconService.instagramIconClass }}"></i></a>
+      <a class="menu-icon" href="https://www.facebook.com/hundyra" target="_blank"><i class="{{ iconService.facebookIconClass }}"></i></a>
     </div>
 </footer>

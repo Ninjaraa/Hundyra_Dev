@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-hem',
@@ -6,6 +7,16 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './hem.component.html'
 })
-export class HemComponent {
-    title = 'hundyra';
+
+export class HemComponent implements OnInit {
+
+  constructor(
+    private titleService: Title,
+    private metaService: Meta
+  ) {}
+
+  ngOnInit() {
+    this.titleService.setTitle('Hem');
+    this.metaService.updateTag({ name: 'description', content: 'Your Page Description' });
+  }
 }

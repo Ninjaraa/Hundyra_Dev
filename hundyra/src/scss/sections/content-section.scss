@@ -10,6 +10,11 @@
         max-width: 782px;
         line-height: 1.5;
 
+        a {
+          color: $color-theme;
+          text-decoration: none;
+        }
+
         .text-content {
           margin: 2rem 0 0 2rem 0;
           text-align: center;
@@ -54,6 +59,13 @@
   
         .img-content {
           margin: 1rem auto;
+        }
+
+        .profile-picture {
+          border-radius: 50%;
+          width: 300px; 
+          height: 300px; 
+          object-fit: cover;
         }
   
         .contact-content {

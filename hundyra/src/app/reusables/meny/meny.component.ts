@@ -7,7 +7,6 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './meny.component.html',
-  styleUrl: './meny.component.scss'
 })
 
 export class MenyComponent {
