@@ -1,47 +1,45 @@
 footer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-gray-3;
+  font-weight: $font-weight-regular;
+  padding: 1rem 1rem;
+
+  @include tablet {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $color-gray-3;
-    font-weight: $font-weight-regular;
     padding: 1rem 1rem;
-    height: auto;
+  }
+
+  .copyright {
+    margin: 1rem 0 1rem 0;
+    text-align: center;
 
     @include tablet {
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: $color-gray-3;
-      padding: 1rem 1rem;
-      height: auto;
-    }
-  
-    .copyright {
       margin: 1rem 0 1rem 0;
       text-align: center;
-
-      @include tablet {
-        margin: 1rem 0 1rem 0;
-        text-align: center;
-      }
     }
+  }
 
-    .menu-icons {
+  .menu-icons {
+    display: inline-block;
+
+    .menu-icon {
       display: inline-block;
+      margin: 0.5rem;
+      font-size: 16px;
+      color: $color-dark;
 
-      .menu-icon {
-        display: inline-block;
-        margin: 0.5rem;
-        font-size: $font-size-16;
-        color: $color-dark;
-
-        &:hover {
-          color: $color-theme;
-        }
+      &:hover {
+        color: $color-theme;
       }
     }
   }
+}

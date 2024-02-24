@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EmailService {
-  emailAddress = 'info@mail.se';
+  emailAddress = 'info@hundyra.se';
 }
 
 @Injectable({
@@ -13,5 +13,5 @@ export class EmailService {
 export class IconService {
   facebookIconClass = 'bi-facebook';
   instagramIconClass = 'bi-instagram';
-  envelopeIconClass = 'bi-envelope';
+  envelopeIconClass = 'bi-envelope-plus';
 }
