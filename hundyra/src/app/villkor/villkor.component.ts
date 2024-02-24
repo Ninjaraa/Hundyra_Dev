@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-villkor',
   standalone: true,
   imports: [],
-  templateUrl: './villkor.component.html',
+  templateUrl: './villkor.component.html'
 })
 
 export class VillkorComponent implements OnInit {
