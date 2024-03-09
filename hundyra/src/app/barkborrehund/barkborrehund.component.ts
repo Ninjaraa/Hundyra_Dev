@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-barkborrehund',
@@ -11,12 +11,12 @@ import { Title, Meta } from '@angular/platform-browser';
 export class BarkborrehundComponent implements OnInit {
 
   constructor(
-    private titleService: Title,
-    private metaService: Meta
-  ) {}
+    private seoService: SeoService) 
+    {
+
+    }
 
   ngOnInit() {
-    this.titleService.setTitle('Barkborrehund | Hundyra');
-    this.metaService.updateTag({ name: 'description', content: 'En “barkborrehund” är en hund som är tränad att söka och lokalisera angrepp från granbarkborren. Läs mer om hur vi jobbar och nyttan med att söka med hund.' });
-  }
+    this.seoService.updateTitle('Barkborrehund');
+    this.seoService.updateMetaTag('description', 'En “barkborrehund” är en hund som är tränad att söka och lokalisera angrepp från granbarkborren. Läs mer om hur vi jobbar och nyttan med att söka med hund.');  }
 }

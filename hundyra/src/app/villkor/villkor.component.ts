@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-villkor',
@@ -10,13 +10,10 @@ import { Title, Meta } from '@angular/platform-browser';
 
 export class VillkorComponent implements OnInit {
 
-  constructor(
-    private titleService: Title,
-    private metaService: Meta
-  ) {}
+  constructor(private seoService: SeoService) {}
 
-  ngOnInit() {
-    this.titleService.setTitle('Köpvillkor | Hundyra');
-    this.metaService.updateTag({ name: 'description', content: 'Detta är de köpvillkor som du godkänner genom att beställa en tjänst från företaget.' });
-  }
+    ngOnInit() {
+      this.seoService.updateTitle('Köpvillkor');
+      this.seoService.updateMetaTag('description', 'Detta är de köpvillkor som du godkänner genom att beställa en tjänst från företaget.');
+    }
 }

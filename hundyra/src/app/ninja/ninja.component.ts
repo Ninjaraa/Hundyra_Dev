@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-ninja',
@@ -10,13 +10,10 @@ import { Title, Meta } from '@angular/platform-browser';
 
 export class NinjaComponent implements OnInit {
 
-  constructor(
-    private titleService: Title,
-    private metaService: Meta
-  ) {}
+  constructor(private seoService: SeoService) {}
 
   ngOnInit() {
-    this.titleService.setTitle('Hundinstruktör/beteendeutredare i Mark | Hundyra');
-    this.metaService.updateTag({ name: 'description', content: 'Jag jobbar som hundinstruktör/beteendeutredare i Marks kommun. Jag hjälper dig med din hundträning, varmt välkommen!' });
+    this.seoService.updateTitle('Hundinstruktör/beteendeutredare i Mark');
+    this.seoService.updateMetaTag('description', 'Jag jobbar som hundinstruktör/beteendeutredare i Marks kommun. Jag hjälper dig med din hundträning, varmt välkommen!');
   }
 }

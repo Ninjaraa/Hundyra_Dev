@@ -1,5 +1,4 @@
 footer {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +8,6 @@ footer {
   padding: 1rem 1rem;
 
   @include tablet {
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,11 +17,11 @@ footer {
   }
 
   .copyright {
-    margin: 1rem 0 1rem 0;
+    margin: $margin;
     text-align: center;
 
     @include tablet {
-      margin: 1rem 0 1rem 0;
+      margin: $margin;
       text-align: center;
     }
   }

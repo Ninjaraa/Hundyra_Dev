@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-privacy',
@@ -9,13 +9,10 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class PrivacyComponent implements OnInit {
 
-  constructor(
-    private titleService: Title,
-    private metaService: Meta
-  ) {}
+  constructor(private seoService: SeoService) {}
 
-  ngOnInit() {
-    this.titleService.setTitle('Sekretesspolicy | Hundyra');
-    this.metaService.updateTag({ name: 'description', content: 'Detta är de sekretesspolicy som gäller när du besöker Hundyra.se' });
-  }
+    ngOnInit() {
+      this.seoService.updateTitle('Sekretesspolicy');
+      this.seoService.updateMetaTag('description', 'Detta är de sekretesspolicy som gäller när du besöker Hundyra.se');
+    }
 }

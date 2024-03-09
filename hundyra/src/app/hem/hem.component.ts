@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
+import { SeoService } from '../services/seo.service';
+import { EmailService } from '../services/email.service';
+import { IconService } from '../services/icon.service';
 
 @Component({
   selector: 'app-hem',
@@ -11,12 +13,14 @@ import { Title, Meta } from '@angular/platform-browser';
 export class HemComponent implements OnInit {
 
   constructor(
-    private titleService: Title,
-    private metaService: Meta
+    private seoService: SeoService,
+    public emailService: EmailService, 
+    public iconService: IconService,
   ) {}
 
   ngOnInit() {
-    this.titleService.setTitle('Barkborresök med hund | Hundyra');
-    this.metaService.updateTag({ name: 'description', content: 'Jag och min hund hjälper dig att söka av din skogsfastighet tidseffektivt efter barkborreangrepp. Vi är verksamma i hela Sverige. Varmt välkommen att kontakta mig!' });
+    this.seoService.updateTitle('Barkborresök med hund');
+    this.seoService.updateMetaTag('description', 'Jag och min hund hjälper dig att söka av din skogsfastighet tidseffektivt efter barkborreangrepp. Vi är verksamma i hela Sverige. Varmt välkommen att kontakta mig!');
   }
+
 }

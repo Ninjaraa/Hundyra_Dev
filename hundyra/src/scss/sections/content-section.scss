@@ -16,45 +16,8 @@
         }
 
         .text-content {
-          margin: 2rem 0 0 2rem;
+          margin: $margin;
           text-align: center;
-        }
-  
-        h1 {
-          margin: 2rem 0 1rem 0;
-          text-align: center; 
-          font-size: $font-size-26;
-          font-weight: $font-weight-medium;
-          color: $color-theme;
-
-          @include tablet {
-            font-size: $font-size-22;
-          }      
-        }
-  
-        h2 {
-          margin: 1rem 0 1rem 0;
-          text-align: center; 
-          font-size: $font-size-20;
-          color: $color-theme;
-          font-weight: $font-weight-light;
-
-          @include tablet {
-            font-size: $font-size-18;
-          }
-        }
-  
-        p {
-          text-align: center; 
-          font-size: $font-size-16;
-          line-height: 1.5;
-          font-family: $font-barlow;
-          font-weight: $font-weight-light;
-          color: $color-theme-dark;
-
-          @include tablet {
-            font-size: $font-size-17;
-          }  
         }
   
         .img-content {
@@ -78,7 +41,7 @@
       }
       
       .text-box {
-        margin: 2rem 0 0 0;
+        margin: 1rem 1rem;
 
         a {
           color: $color-theme;

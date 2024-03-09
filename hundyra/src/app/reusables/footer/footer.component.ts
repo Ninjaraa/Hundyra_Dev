@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { EmailService, IconService } from '../shared.service';
+import { EmailService } from '../../services/email.service';
+import { IconService } from '../../services/icon.service';
 
 @Component({
   selector: 'app-footer',
