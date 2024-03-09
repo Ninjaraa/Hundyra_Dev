@@ -1,23 +1,27 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PrivacyComponent } from './privacy.component';
+import { SeoService } from '../services/seo.service';
 
-describe('PrivacyComponent', () => {
+describe('KontaktComponent', () => {
   let component: PrivacyComponent;
-  let fixture: ComponentFixture<PrivacyComponent>;
+  let seoService: jest.Mocked<SeoService>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [PrivacyComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(PrivacyComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  beforeEach(() => {
+    seoService = {
+      updateTitle: jest.fn(),
+      updateMetaTag: jest.fn()
+    } as unknown as jest.Mocked<SeoService>;
+
+    component = new PrivacyComponent(seoService);
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should set SEO title and meta description on initialization', () => {
+    component.ngOnInit();
+
+    expect(seoService.updateTitle).toHaveBeenCalledWith('Sekretesspolicy');
+    expect(seoService.updateMetaTag).toHaveBeenCalledWith('description', expect.any(String));
   });
 });

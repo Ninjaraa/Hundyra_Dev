@@ -11,12 +11,10 @@ import { SeoService } from '../services/seo.service';
 export class BarkborrehundComponent implements OnInit {
 
   constructor(
-    private seoService: SeoService) 
-    {
-
-    }
+    private seoService: SeoService) { }
 
   ngOnInit() {
     this.seoService.updateTitle('Barkborrehund');
-    this.seoService.updateMetaTag('description', 'En “barkborrehund” är en hund som är tränad att söka och lokalisera angrepp från granbarkborren. Läs mer om hur vi jobbar och nyttan med att söka med hund.');  }
+    this.seoService.updateMetaTag('description', 'En “barkborrehund” är en hund som är tränad att söka och lokalisera angrepp från granbarkborren. Läs mer om hur vi jobbar och nyttan med att söka med hund.');
+  }
 }

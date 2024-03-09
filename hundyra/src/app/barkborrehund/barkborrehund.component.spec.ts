@@ -1,13 +1,27 @@
-import { BarkborrehundComponent } from "./barkborrehund.component"
+import { BarkborrehundComponent } from './barkborrehund.component';
+import { SeoService } from '../services/seo.service';
 
-describe('AppComponent', () => {
-  let fixture: BarkborrehundComponent;
+describe('BarkborrehundComponent', () => {
+  let component: BarkborrehundComponent;
+  let seoService: jest.Mocked<SeoService>;
 
   beforeEach(() => {
-    fixture = new BarkborrehundComponent();
-  })
+    seoService = {
+      updateTitle: jest.fn(),
+      updateMetaTag: jest.fn()
+    } as unknown as jest.Mocked<SeoService>;
 
-  it('Needs a title hundyra', () => {
-    expect(fixture.title).toEqual('barkborrehund');
-  })
-})
+    component = new BarkborrehundComponent(seoService);
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  it('should set SEO title and meta description on initialization', () => {
+    component.ngOnInit();
+
+    expect(seoService.updateTitle).toHaveBeenCalledWith('Barkborrehund');
+    expect(seoService.updateMetaTag).toHaveBeenCalledWith('description', expect.any(String));
+  });
+});

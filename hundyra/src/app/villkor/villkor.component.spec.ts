@@ -1,23 +1,27 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { VillkorComponent } from './villkor.component';
+import { SeoService } from '../services/seo.service';
 
-describe('VillkorComponent', () => {
+describe('KontaktComponent', () => {
   let component: VillkorComponent;
-  let fixture: ComponentFixture<VillkorComponent>;
+  let seoService: jest.Mocked<SeoService>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [VillkorComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(VillkorComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  beforeEach(() => {
+    seoService = {
+      updateTitle: jest.fn(),
+      updateMetaTag: jest.fn()
+    } as unknown as jest.Mocked<SeoService>;
+
+    component = new VillkorComponent(seoService);
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should set SEO title and meta description on initialization', () => {
+    component.ngOnInit();
+
+    expect(seoService.updateTitle).toHaveBeenCalledWith('Köpvillkor');
+    expect(seoService.updateMetaTag).toHaveBeenCalledWith('description', expect.any(String));
   });
 });

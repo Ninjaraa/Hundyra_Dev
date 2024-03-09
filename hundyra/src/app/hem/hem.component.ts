@@ -14,13 +14,12 @@ export class HemComponent implements OnInit {
 
   constructor(
     private seoService: SeoService,
-    public emailService: EmailService, 
+    public emailService: EmailService,
     public iconService: IconService,
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.seoService.updateTitle('Barkborresök med hund');
     this.seoService.updateMetaTag('description', 'Jag och min hund hjälper dig att söka av din skogsfastighet tidseffektivt efter barkborreangrepp. Vi är verksamma i hela Sverige. Varmt välkommen att kontakta mig!');
   }
-
 }
