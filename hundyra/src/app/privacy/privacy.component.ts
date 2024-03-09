@@ -14,5 +14,6 @@ export class PrivacyComponent implements OnInit {
     ngOnInit() {
       this.seoService.updateTitle('Sekretesspolicy');
       this.seoService.updateMetaTag('description', 'Detta är de sekretesspolicy som gäller när du besöker Hundyra.se');
+      this.seoService.updateMetaTag('robots', 'noindex');
     }
 }

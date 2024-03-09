@@ -1,64 +1,71 @@
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-gray-3;
-  font-weight: $font-weight-regular;
-  padding: 1rem 1rem;
 
-  @include tablet {
+  .container-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $color-gray-3;
-    padding: 1rem 1rem;
-  }
+    padding: 1rem;
 
-  .copyright {
-    margin: $margin;
-    text-align: center;
+    .social-icons {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
 
-    @include tablet {
-      margin: $margin;
-      text-align: center;
-    }
-  }
+      a {
+        margin: 0 0.3rem;
+        font-size: $font-size-14;
+        line-height: 1.5;
+        font-family: $font-barlow;
+        font-weight: $font-weight-light;
+        color: $color-theme-dark;
+        font-weight: $font-weight-regular;
 
-  .menu-icons {
-    display: inline-block;
-
-    .menu-icon {
-      display: inline-block;
-      margin: 0.5rem;
-      font-size: 16px;
-      color: $color-dark;
-
-      &:hover {
-        color: $color-theme;
+        &:hover {
+          color: $color-theme;
+        }
       }
     }
-  }
-  .footer-text {
-    display: inline-block;
-    margin: 0.5rem;
-    font-size: 16px;
-    color: $color-dark;
 
-    &:hover {
-      color: $color-theme;
+    .copyright {
+      margin: 0 1rem;
+      text-decoration: none;
+      text-align: center;
+      font-size: $font-size-14;
+      line-height: 1.5;
+      font-family: $font-barlow;
+      font-weight: $font-weight-light;
+      color: $color-theme-dark;
+      display: inline-block;
     }
 
-    .footer-link {
-    display: inline-block;
-    margin: 0.5rem;
-    font-size: 16px;
-    color: $color-dark;
-    }
-    
-    &:hover {
-      color: $color-theme;
+    .footer-links {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+
+      .footer-link {
+        text-decoration: none;
+        text-align: center;
+        font-size: $font-size-14;
+        line-height: 1.5;
+        font-family: $font-barlow;
+        font-weight: $font-weight-light;
+        color: $color-theme-dark;
+        margin: 0 0.3rem;
+        display: inline-block;
+
+        &:hover {
+          color: $color-theme;
+        }
+
+        &:not(:last-child)::after {
+          content: "|";
+          margin-left: 0.5rem;
+          color: $color-dark;
+        }
+      }
     }
   }
 }

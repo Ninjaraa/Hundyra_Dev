@@ -15,5 +15,6 @@ export class VillkorComponent implements OnInit {
     ngOnInit() {
       this.seoService.updateTitle('Köpvillkor');
       this.seoService.updateMetaTag('description', 'Detta är de köpvillkor som du godkänner genom att beställa en tjänst från företaget.');
+      this.seoService.updateMetaTag('robots', 'noindex');
     }
 }
