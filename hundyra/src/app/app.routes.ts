@@ -5,6 +5,7 @@ import { BarkborrehundComponent } from './barkborrehund/barkborrehund.component'
 import { NinjaComponent } from './ninja/ninja.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { VillkorComponent } from './villkor/villkor.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 export const routes: Routes = [
     { path: '', component: HemComponent},
@@ -12,6 +13,7 @@ export const routes: Routes = [
     { path: 'om-ninja', component: NinjaComponent},
     { path: 'kontakt', component: KontaktComponent },
     { path: 'villkor', component: VillkorComponent },
+    { path: 'sekretesspolicy', component: PrivacyComponent}
 ];
 
 @NgModule({
