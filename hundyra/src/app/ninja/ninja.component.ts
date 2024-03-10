@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '../services/seo.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-ninja',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './ninja.component.html',
 })
 

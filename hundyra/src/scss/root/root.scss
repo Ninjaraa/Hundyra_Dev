@@ -1,4 +1,3 @@
-// Site
 html,
 body {
     font-size: $font-size-16;
@@ -60,16 +59,17 @@ header {
     font-weight: $font-weight-light;
 
     @include tablet {
+      margin: $m-margin;
       font-size: $font-size-18;
     }
   }
 
   h3 {
-    margin-bottom: 0.5rem;
+    margin: $m-margin;
     text-align: center;
     font-size: $font-size-18;
     font-weight: $font-weight-medium;
-    color: $color-dark;
+    color: $color-theme;
 
     @include tablet {
       font-size: $font-size-20;
@@ -131,6 +131,7 @@ header {
   }
 
   p {
+    margin-top: 0;
     margin-bottom: 0;
     text-align: center; 
     font-size: $font-size-16;
@@ -140,11 +141,12 @@ header {
     color: $color-theme-dark;
 
     @include tablet {
-      font-size: $font-size-17;
+      font-size: $font-size-16;
     }  
   }
 
   span {
+    margin-top: 0;
     margin-bottom: 0;
     text-align: center; 
     font-size: $font-size-16;

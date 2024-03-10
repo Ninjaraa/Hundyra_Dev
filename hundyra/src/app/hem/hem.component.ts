@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { SeoService } from '../services/seo.service';
 import { EmailService } from '../services/email.service';
 import { IconService } from '../services/icon.service';
@@ -6,7 +7,7 @@ import { IconService } from '../services/icon.service';
 @Component({
   selector: 'app-hem',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './hem.component.html'
 })
 

@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '../services/seo.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-villkor',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './villkor.component.html'
 })
 
