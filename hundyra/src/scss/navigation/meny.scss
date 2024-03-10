@@ -16,6 +16,7 @@
     justify-content: center;
     flex-direction: column;
     height: auto;
+    padding-top: 0.5rem; 
 
     .logo img {
       width: 175px;
@@ -83,7 +84,7 @@
 
       @include mobile {
         display: block;
-        margin-top: 10px;
+        margin: 0.3rem 0 0.3rem 0;
       }
     }
   }

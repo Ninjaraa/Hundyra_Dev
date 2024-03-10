@@ -38,12 +38,20 @@ footer {
       font-weight: $font-weight-light;
       color: $color-theme-dark;
       display: inline-block;
+
+      @include tablet {
+        font-size: $font-size-12;
+      }
     }
 
     .footer-links {
       margin: 1rem 0;
       display: flex;
       justify-content: center;
+
+      @include tablet {
+        margin: 0.5rem 0;
+      }
 
       .footer-link {
         text-decoration: none;
@@ -53,8 +61,13 @@ footer {
         font-family: $font-barlow;
         font-weight: $font-weight-light;
         color: $color-theme-dark;
-        margin: 0 0.3rem;
+        margin: 0 0.3rem 0 0.3rem;
         display: inline-block;
+
+        @include tablet {
+          margin: 0 0.2rem 0 0.2rem;
+          font-size: $font-size-12;
+        }
 
         &:hover {
           color: $color-theme;
