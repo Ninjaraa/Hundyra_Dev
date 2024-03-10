@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './reusables/footer/footer.component';
 import { MenyComponent } from './reusables/meny/meny.component';
 import { GtmService } from './services/gtm.service';
+import { ConsentService } from './services/consent.service';
 
 @Component({
   selector: 'app-root',
@@ -14,9 +15,10 @@ import { GtmService } from './services/gtm.service';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private gtmService: GtmService) {}
+  constructor(private consentService: ConsentService, private gtmService: GtmService) {}
   
   ngOnInit() {
+    this.consentService.loadConsentScript();
     this.gtmService.initGtmScript();
   }
 }
