@@ -16,9 +16,13 @@
       font-size: $font-size-14 !important;
     }
   }
-  
+
   .cc-nb-okagree {
     background-color: $color-theme !important;
+
+    &:focus {
+      box-shadow: 0 0 0 2px $color-theme !important;
+    }
     
     @include tablet {
       font-size: $font-size-14 !important;
@@ -27,6 +31,10 @@
   
   .cc-nb-reject {
     background-color: $color-theme !important;
+
+    &:focus {
+      box-shadow: 0 0 0 2px $color-theme !important;
+    }
   
     @include tablet {
       font-size: $font-size-14 !important;
@@ -41,8 +49,16 @@
     background-color: $color-theme !important;
   }
 
+  .cc-custom-checkbox:checked+label:after {
+    background-color: $color-theme !important;
+  }
+
   .cc-nb-changep {
     background-color: #d3d3d3 !important;
+
+    &:focus {
+      box-shadow: 0 0 0 2px $color-theme !important;
+    }
   
     @include tablet {
       font-size: $font-size-14 !important;
