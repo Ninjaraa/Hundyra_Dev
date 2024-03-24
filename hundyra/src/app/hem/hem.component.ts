@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { SeoService } from '../services/seo.service';
 import { EmailService } from '../services/email.service';
 import { IconService } from '../services/icon.service';
+import { GtmService } from '../services/gtm.service';
 
 @Component({
   selector: 'app-hem',
@@ -17,7 +18,12 @@ export class HemComponent implements OnInit {
     private seoService: SeoService,
     public emailService: EmailService,
     public iconService: IconService,
+    private gtmService: GtmService,
   ) { }
+
+  onThemeButtonClick(buttonName: string): void {
+    this.gtmService.trackButtonClick(buttonName);
+  }
 
   ngOnInit() {
     this.seoService.updateTitle('Barkborresök med hund');
