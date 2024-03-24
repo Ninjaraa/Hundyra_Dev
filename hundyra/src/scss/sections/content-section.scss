@@ -24,10 +24,13 @@
         }
   
         .img-content {
+          margin-top: 1rem;
+
           img {
             max-width: 700px;
             
             @include tablet {
+              margin-top: 1rem;
               max-width: 100%;
             }
           } 

@@ -79,7 +79,7 @@ header {
   
   .theme-btn {
     font-size: $font-size-16;
-    margin: 1rem 0 1rem 0;
+    // margin: 0.3rem 0 1.3rem 0;
     min-width: 100px;
     height: 50px;
     background-color: $color-theme;
@@ -91,7 +91,7 @@ header {
     
     @include tablet {
       font-size: $font-size-14;
-      margin: 0.8rem 0 0.8rem 0;
+      // margin: 1rem 0 1rem 0;
       min-width: 100px;
       height: 50px;
     }
@@ -106,7 +106,7 @@ header {
   .light-btn {
     font-size: $font-size-16;
     display: inline-block;
-    margin: 1rem 0 1rem 0;
+    // margin: 1rem 0 1rem 0;
     min-width: 100px;
     height: 50px;
     background-color: $color-white;
@@ -118,7 +118,7 @@ header {
 
     @include tablet {
       font-size: $font-size-14;
-      margin: 0.8rem 0 0.8rem 0;
+      // margin: 0.8rem 0 0.8rem 0;
       min-width: 100px;
       height: 50px;
     }

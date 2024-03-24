@@ -1,6 +1,7 @@
 footer {
 
   .container-footer {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +15,7 @@ footer {
 
       a {
         margin: 0 0.3rem;
-        font-size: $font-size-14;
+        font-size: $font-size-16;
         line-height: 1.5;
         font-family: $font-barlow;
         font-weight: $font-weight-light;
@@ -31,7 +32,7 @@ footer {
       margin: 0 1rem;
       text-decoration: none;
       text-align: center;
-      font-size: $font-size-14;
+      font-size: $font-size-16;
       line-height: 1.5;
       font-family: $font-barlow;
       font-weight: $font-weight-light;
@@ -39,7 +40,7 @@ footer {
       display: inline-block;
 
       @include tablet {
-        font-size: $font-size-12;
+        font-size: $font-size-16;
       }
     }
 
@@ -55,7 +56,7 @@ footer {
       .footer-link {
         text-decoration: none;
         text-align: center;
-        font-size: $font-size-14;
+        font-size: $font-size-15;
         line-height: 1.5;
         font-family: $font-barlow;
         font-weight: $font-weight-light;
@@ -65,7 +66,7 @@ footer {
 
         @include tablet {
           margin: 0 0.2rem 0 0.2rem;
-          font-size: $font-size-12;
+          font-size: $font-size-15;
         }
 
         &:hover {
