@@ -13,6 +13,9 @@ import { GtmService } from '../services/gtm.service';
 })
 
 export class HemComponent implements OnInit {
+  loadGtmIfConsentGranted() {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(
     private seoService: SeoService,

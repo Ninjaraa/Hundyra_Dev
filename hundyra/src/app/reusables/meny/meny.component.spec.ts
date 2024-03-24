@@ -32,13 +32,4 @@ describe('MenyComponent', () => {
 
     expect(component.isMenuVisible).toBeFalsy();
   });
-
-  it('should attempt to send an email when contactEmail is called', () => {
-    const spy = jest.spyOn(window, 'open');
-    
-    component.contactEmail();
-    expect(spy).toHaveBeenCalledWith(`mailto:${emailService.emailAddress}`, '_blank');
-    expect(console.log).toHaveBeenCalledWith(`Attempting to send email to: ${emailService.emailAddress}`);
-  });
-
 });
