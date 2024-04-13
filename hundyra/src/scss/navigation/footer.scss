@@ -13,6 +13,25 @@ footer {
       display: flex;
       justify-content: center;
 
+      .social-icon {
+        width: 32px;
+        height: 32px;
+        fill: $color-theme;
+
+        &:hover {
+          fill: $color-theme-hover;
+        }
+
+        @include tablet {
+          width: 24px;
+          height: 24px;
+
+          &:hover {
+            fill: $color-theme-hover;
+          }
+        }
+      }
+
       a {
         margin: 0 0.3rem;
         font-size: $font-size-16;
@@ -40,33 +59,31 @@ footer {
       display: inline-block;
 
       @include tablet {
-        font-size: $font-size-16;
+        font-size: $font-size-14;
       }
     }
 
     .footer-links {
-      margin: 1rem 0;
+      margin-top: 0.5rem;
       display: flex;
       justify-content: center;
+      align-items: center;
+      text-align: center;
 
       @include tablet {
-        margin: 0.5rem 0;
+        margin-top: 0.5rem;
       }
 
       .footer-link {
         text-decoration: none;
-        text-align: center;
         font-size: $font-size-15;
-        line-height: 1.5;
         font-family: $font-barlow;
         font-weight: $font-weight-light;
         color: $color-theme-dark;
-        margin: 0 0.3rem 0 0.3rem;
         display: inline-block;
 
         @include tablet {
-          margin: 0 0.2rem 0 0.2rem;
-          font-size: $font-size-15;
+          font-size: $font-size-14;
         }
 
         &:hover {
@@ -76,7 +93,12 @@ footer {
         &:not(:last-child)::after {
           content: "|";
           margin-left: 0.5rem;
-          color: $color-dark;
+          margin-right: 0.5rem;
+
+          &:hover {
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+          }
         }
       }
     }
