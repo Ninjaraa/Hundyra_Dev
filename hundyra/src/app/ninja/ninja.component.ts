@@ -15,6 +15,6 @@ export class NinjaComponent implements OnInit {
 
   ngOnInit() {
     this.seoService.updateTitle('Hundinstruktör/beteendeutredare i Mark');
-    this.seoService.updateMetaTag('description', 'Jag jobbar som hundinstruktör/beteendeutredare i Marks kommun. Jag hjälper dig med din hundträning, varmt välkommen!');
+    this.seoService.updateMetaTag('description', 'Utöver sökuppdrag jobbar jag även som hundinstruktör och beteendeutredare. Läs mer om mig här!');
   }
 }
