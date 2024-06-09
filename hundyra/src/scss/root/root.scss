@@ -65,6 +65,19 @@ header {
     }
   }
 
+  .media {
+    margin: 0 0 1rem 0;
+    text-align: center; 
+    font-size: $font-size-20;
+    color: $color-theme;
+    font-weight: $font-weight-light;
+
+    @include tablet {
+      margin: $m-margin;
+      font-size: $font-size-18;
+    }
+  }
+
   h3 {
     margin: $m-margin;
     text-align: center;
