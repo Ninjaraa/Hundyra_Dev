@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '../services/seo.service';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-privacy',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './privacy.component.html',
 })
 export class PrivacyComponent implements OnInit {

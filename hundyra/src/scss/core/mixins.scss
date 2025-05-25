@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 // Media query mixins
 @mixin mobile {
     $max-width: $breakpoint-tablet - 1px;

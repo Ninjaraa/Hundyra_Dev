@@ -1,3 +1,6 @@
+@use '../core/variables.scss' as *;
+@use '../core/mixins.scss' as *;
+
 .content-section, .villkor-section, .privacy-section {
     .container {
       display: flex;

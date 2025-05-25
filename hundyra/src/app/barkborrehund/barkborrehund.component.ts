@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '../services/seo.service';
-import { RouterLink } from '@angular/router';
 import { EmailService } from '../services/email.service';
 import { IconService } from '../services/icon.service';
 import { GtmService } from '../services/gtm.service';
@@ -8,7 +7,7 @@ import { GtmService } from '../services/gtm.service';
 @Component({
   selector: 'app-barkborrehund',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './barkborrehund.component.html'
 })
 

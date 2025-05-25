@@ -1,5 +1,7 @@
-footer {
+@use '../core/variables.scss' as *;
+@use '../core/mixins.scss' as *;
 
+footer {
   .container-footer {
     padding: 1rem;
     margin-top: 1rem;

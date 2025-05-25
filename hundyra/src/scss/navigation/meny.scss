@@ -1,3 +1,6 @@
+@use '../core/variables.scss' as *;
+@use '../core/mixins.scss' as *;
+
 .main-menu {
   width: 100%;
   overflow: hidden;
