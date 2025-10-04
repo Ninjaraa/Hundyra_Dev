@@ -18,7 +18,7 @@
     "@angular/platform-browser-dynamic": "^19.2.13",
     "@angular/platform-server": "^19.2.13",
     "@angular/router": "^19.2.13",
-    "@angular/ssr": "^19.2.13",
+    "@angular/ssr": "^20.3.4",
     "@ng-bootstrap/ng-bootstrap": "^18.0.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.6",
@@ -29,8 +29,8 @@
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^19.2.13",
-    "@angular/cli": "^19.2.13",
+    "@angular/build": "^20.3.4",
+    "@angular/cli": "^20.3.4",
     "@angular/compiler-cli": "^19.2.13",
     "@angular/localize": "^19.2.13",
     "@types/express": "^5.0.2",
